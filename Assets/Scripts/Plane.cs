@@ -1,16 +1,24 @@
 using UnityEngine;
 
-public class Bus : Vehicle
+public class Plane : Vehicle
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Weight = 1.5f;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    protected override void Move()
+    {
+        Fly();
+    }
+    void Fly()
+    {
+        // Flying logic for the plane
     }
 }

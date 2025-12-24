@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Car : Vehicle
+public class Boat : Vehicle
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,11 +15,10 @@ public class Car : Vehicle
     }
     protected override void Move()
     {
-        Drive();
+        Steer();
     }
-    void Drive()
+    void Steer()
     {
-        // Driving logic for the car
-        
+        // Steering logic for the boat
     }
 }
